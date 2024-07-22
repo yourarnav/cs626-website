@@ -215,6 +215,30 @@ header {
   color: transparent;
   display: inline-block;
 }
+
+/* Flexbox for TAs */
+.course-tas .ta-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.course-tas .ta-wrapper .ta {
+  text-align: center;
+  flex: 1 1 150px;
+  max-width: 150px;
+}
+
+.course-tas .ta-wrapper .ta img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .navbar a {padding: 10px; font-size: 14px;}
+}
 </style>
 <script>
 var newwindow;
@@ -359,28 +383,30 @@ function scrollToSection(id) {
 	<div class="w3-content">
         <div class="course-tas">
             <h2 class="gradient-text"><b>Teaching Assistants</b></h2>
-            <div style="display: flex; flex-wrap; wrap; gap: 20px;">
-                <div style="text-align: center;">
-                    <img src="ta1.jpg" alt="Settaluri Sravanthi" style="width:150px;height:150px;border-radius:50%;"><br>
+            <div class="ta-wrapper">
+                <div class="ta">
+                    <img src="ta1.jpg" alt="Settaluri Sravanthi"><br>
                     <a href="https://example.com/ta1" target="_blank"><font color='teal'>Settaluri Sravanthi</font></a>
                 </div>
-                <div style="text-align: center;">
-                    <img src="ta2.jpg" alt="Nihar Ranjan Sahoo" style="width:150px;height:150px;border-radius:50%;"><br>
+                <div class="ta">
+                    <img src="ta2.jpg" alt="Nihar Ranjan Sahoo"><br>
                     <a href="https://sahoonihar.github.io/" target="_blank"><font color='teal'>Nihar Ranjan Sahoo</font></a>
                 </div>
-                <div style="text-align: center;">
-                    <img src="1.jpg" alt="Arnav Attri" style="width:150px;height:150px;border-radius:50%;"><br>
+                <div class="ta">
+                    <img src="1.jpg" alt="Arnav Attri"><br>
                     <a href="https://cuteasduck.notion.site/TA-CS-626-d5d96ce8cc464f5dae095273f881d6eb" target="_blank"><font color='teal'>Arnav Attri</font></a>
                 </div>
-                <div style="text-align: center;">
-                    <img src="4.jpg" alt="Anuj Attri" style="width:150px;height:150px;border-radius:50%;"><br>
+                <div class="ta">
+                    <img src="4.jpg" alt="Anuj Attri"><br>
                     <a href="https://cuteasduck.notion.site/Anuj-TA-CS-626-81f4facc5f02455f871aa5eaed2435e8" target="_blank"><font color='teal'>Anuj Attri</font></a>
                 </div>
-                <div style="text-align: center;">
-                    <img src="ta5.jpeg" alt="Harshvivek Kashid" style="width:150px;height:150px;border-radius:50%;"><br>
+                <div class="ta">
+                    <img src="ta5.jpeg" alt="Harshvivek Kashid"><br>
                     <a href="https://github.com/harshvivek14" target="_blank"><font color='teal'>Harshvivek Kashid</font></a>
                 </div>
+            </div>
         </div>
+    </div>
 </section>
 
 <hr>
